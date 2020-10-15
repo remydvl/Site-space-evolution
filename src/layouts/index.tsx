@@ -1,8 +1,9 @@
-import * as React from 'react'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
-
 import './index.css'
+
+import * as React from 'react'
+
+import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 
 const Header = () => (
   <div
@@ -60,7 +61,7 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps, void> {
             paddingTop: 0,
           }}
         >
-          {this.props.children()}
+          {this.props.children}
         </div>
       </div>
     )
