@@ -26,18 +26,6 @@ export default class extends React.Component<IndexPageProps, {}> {
       <div>
         <h1>{data.title}</h1>
         <p>{data.intro}</p>
-        <p>Space évolution et un jeu qui se joue en quatre parties
-          le jeu débute en mode shoot them up se poursuit en tower defense
-          continue en fps pour se terminer comme il a commencé.
-        </p>
-
-        <p>Space évolution à été conçu intégralement en langage python
-          par Ros Billy et Duval Rémy, sa conception à débuter le 21/09/20.
-          </p>
-
-        <p>Dans ce jeu comme dans la plupart des autre la difficulté augmente progressivement
-          mais ce qui le différencie des autres c'est son changement de gameplay.
-        </p>
         <img src={data.image} alt='space-evolution logo' />
         <Link to="/page-2/">Go to page 2</Link>
       </div>
