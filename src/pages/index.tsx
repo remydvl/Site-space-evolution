@@ -45,15 +45,6 @@ export default class extends React.Component<IndexPageProps, {}> {
   }
 }
 
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
 export const cmsQuery = graphql`
   query {
     allFile (filter: {sourceInstanceName: {eq: "content"} name: {eq: "home"}}) {
