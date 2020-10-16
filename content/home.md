@@ -1,7 +1,5 @@
 ---
-
 title: Space invaders
-intro: ajouter le texte home
+intro: modif
 image: assets/start.jpg
-
 ---
