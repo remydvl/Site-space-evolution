@@ -25,10 +25,9 @@ export default class extends React.Component<IndexPageProps, {}> {
     return (
       <div>
         <h1>{data.title}</h1>
-        <p>{data.intro}</p>
         <img src={data.image} alt='space-evolution logo' />
-        <div><a class="button" href={data.winFile}><i class="fa fa-download"></i>Telecharger pour windows</a></div>
-        <div><Link to="/page-2/">Go to page 2</Link></div>
+        <div><a className="button" href={data.winFile}><i className="fa fa-download"></i>Telecharger pour windows</a></div>
+        <p>{data.intro}</p>
       </div>
     )
   }
