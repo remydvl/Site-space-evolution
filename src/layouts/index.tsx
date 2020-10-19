@@ -27,7 +27,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          Space evolution
         </Link>
       </h1>
     </div>
@@ -45,13 +45,11 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps, void> {
   public render() {
     return (
       <div>
-        <Helmet
-          title="Gatsby Default Starter"
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        />
+        <Helmet>
+          <title>Space evolution</title>
+          <meta name="description" content="LE site du jeu space evolution" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        </Helmet>
         <Header />
         <div
           style={{

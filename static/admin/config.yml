@@ -1,6 +1,6 @@
 backend: 
-    name: github
-    repo: remydvl/Site-space-evolution
+    name: git-gateway
+    branch: master # Branch to update (optional; defaults to master)
 
 media_folder: static/assets
 public_folder: assets
@@ -13,6 +13,7 @@ collections:
           name: "home"
           file: "content/home.md"
           fields:
-            - {label: Title, name: title, widget: string}
-            - {label: Intro text, name: intro, widget: text}
-            - {label: Image, name: image, widget: image}
+            - {label: "Title", name: title, widget: string}
+            - {label: "Intro text", name: intro, widget: text}
+            - {label: "Image", name: image, widget: image}
+            - {label: "Executable du jeu", name: winFile, widget: file, default: "assets/space-evolution_v-1-0-0_win"}

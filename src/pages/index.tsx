@@ -25,9 +25,9 @@ export default class extends React.Component<IndexPageProps, {}> {
     return (
       <div>
         <h1>{data.title}</h1>
-        <p>{data.intro}</p>
         <img src={data.image} alt='space-evolution logo' />
-        <Link to="/page-2/">Go to page 2</Link>
+        <div><a className="button" href={data.winFile}><i className="fa fa-download"></i>Telecharger pour windows</a></div>
+        <p>{data.intro}</p>
       </div>
     )
   }
@@ -43,6 +43,7 @@ export const cmsQuery = graphql`
               title
               intro
               image
+              winFile
           }
         }
       }
